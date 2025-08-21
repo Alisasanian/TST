@@ -8,10 +8,10 @@ Built for easy "what-if" analyses and executive-friendly visuals.
 
 ```bash
 # 1) Build
-docker build -t revit-licensing-optimizer .
+docker build -t TST .
 
 # 2) Run
-docker run --rm -p 8501:8501 revit-licensing-optimizer
+docker run --rm -p 8501:8501 TST
 
 # 3) Open
 # Visit http://localhost:8501 in your browser
@@ -20,7 +20,7 @@ docker run --rm -p 8501:8501 revit-licensing-optimizer
 ## Direct (no Docker)
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run TST.py
 ```
 
 ## What it does
@@ -39,7 +39,7 @@ streamlit run app.py
 - Break-even days ≈ `seat_price / (10 × token_price)`
 
 ## Customize
-- Edit `app.py` to change formulas or add more scenarios.
+- Edit `TST.py` to change formulas or add more scenarios.
 - If you have real usage logs, replace inputs with a CSV uploader and compute cohort sizes automatically.
 
 ## Security & Networking
